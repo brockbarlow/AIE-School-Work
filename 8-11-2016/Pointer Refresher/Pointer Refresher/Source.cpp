@@ -4,6 +4,8 @@ int main() //main function
 {
 	int i, k; //interger variable i and k
 	int * j; //declared pointer. pointing to an interger 
+	int a = 420, b = 840; // interger variables a and b. a equals 420 and b equals 840
+	int * c, * d; //declared pointers. pointing to an interger
 
 	i = 5; //i equals 5
 	std::cout << "I = " << i << std::endl; //print i
@@ -31,6 +33,22 @@ int main() //main function
 	*j = 45; //value pointed to by j equals 45
 	std::cout << "*J = " << *j << std::endl; //prints value pointed to by j
 	std::cout << "J = " << j << std::endl; //prints address
+	std::cout << std::endl; //new line
+
+	std::cout << "A = " << a << std::endl; //prints a
+	std::cout << "B = " << b << std::endl; //prints b
+	std::cout << std::endl; //new line
+
+	c = &a; //c equals the address of variable a
+	d = &b; //d equals the address of variable b
+
+	*c = 640; //value pointed to by c equals 640
+	*d = *c; //value pointed to by d equals value pointed to by c
+	c = d; //c equals d. value of pointer is copied.
+	*c = 950; //value pointed to by c equals 950 
+
+	std::cout << "A = " << a << std::endl; //prints a
+	std::cout << "B = " << b << std::endl; //prints b
 	std::cout << std::endl; //new line
 
 	system("pause"); //pauses promt to view output
