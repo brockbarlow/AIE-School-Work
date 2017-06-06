@@ -1,0 +1,5 @@
+Question: What is an attribute in C#?
+
+My answer: Off the top my head, I do not know what an attribute is. The only
+	   thing that comes to mind is that an attribute is a data type for a 
+	   variable.
